@@ -84,33 +84,81 @@
 // perro.hacerSonido()
 
 
-class Auto{
+// class Auto{
+//     constructor(modelo){
+//         this.modelo = modelo;
+//         this.enMovimiento = false;
+//     }
+//     avanzar(){
+//         if(this.enMovimiento == false){
+//             this.enMovimiento = true
+//             console.log(`El ${this.modelo} esta avanzando`)
+//         }else {
+//         console.log(`El ${this.modelo} ya esta avanzando`)
+
+//     }
+//     }
+//     frenar(){
+//         if(this.enMovimiento == true){
+//             this.enMovimiento = false
+//             console.log(`El ${this.modelo} esta frenando`)
+//         }else {
+//             console.log(`El ${this.modelo} ya esta frenando`)
+//         }
+//     }
+// }
+
+// var auto1 = new Auto("ferrari")
+
+// auto1.avanzar()
+// auto1.frenar()
+
+// Tarea hacer lo mismo, que cuando acelere sume algo de velocidad, pero que cuando llegue a los 80 km/hr que frene, y que la velocidad quede en 0.
+
+class Auto2{
     constructor(modelo){
         this.modelo = modelo;
-        this.enMovimiento = false;
-    }
-    avanzar(){
-        if(this.enMovimiento == false){
-            this.enMovimiento = true
-            console.log(`El ${this.modelo} esta avanzando`)
-        }else {
-        console.log(`El ${this.modelo} ya esta avanzando`)
+        this.velocidad = 0;
 
     }
-    }
-    frenar(){
-        if(this.enMovimiento == true){
-            this.enMovimiento = false
-            console.log(`El ${this.modelo} esta frenando`)
-        }else {
-            console.log(`El ${this.modelo} ya esta frenando`)
+    
+    acelerar(){
+        let newVelocidad = this.velocidad + 5
+
+        if(newVelocidad <= 80){
+            this.velocidad = this.velocidad + 5
+            console.log(`La velocidad actual de tu ${this.modelo} es de ${this.velocidad} km/hr.`)
+        }else{
+            this.velocidad = 0
+            console.log(`Haz alcanzado la velocidad máxima, tu ${this.modelo} reducira su velocidad a 0`)
+            }
         }
-    }
-}
 
-var auto1 = new Auto("ferrari")
+    turbo(){
+        let newVelocidad = this.velocidad + 30
 
-auto1.avanzar()
-auto1.frenar()
+        if(newVelocidad <= 80 && this.velocidad >= 20){
+            this.velocidad = this.velocidad + 30
+            console.log(`La velocidad actual de tu ${this.modelo} es de ${this.velocidad} km/hr.`)
+            }else if(this.velocidad <=80 && this.velocidad <=20){
+            console.log(`La velocidad actual de tu ${this.modelo},es de ${this.velocidad} km/hr. solo puedes usar el turbo  sobre los 20 km/hr.`)
 
-// Tarea hacer lo mismo, pero que cuando llegue a los 80 km/hr que frene, y que la velocidad quede en 0.
+        }else{
+            console.log(`Haz alcanzado la velocidad máxima, tu ${this.modelo} reducira su velocidad a 0`)
+            this.velocidad = 0
+            }
+
+        }
+            
+        }
+
+var auto2 = new Auto2("Hilux")
+auto2.acelerar()
+auto2.acelerar()
+auto2.turbo()
+auto2.acelerar()
+auto2.acelerar()
+auto2.turbo()
+auto2.turbo()
+auto2.acelerar()
+
