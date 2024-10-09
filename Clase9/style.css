@@ -1,0 +1,44 @@
+#primer-parrafo{
+    color:rgb(243, 243, 253);
+    font-size: 35px ;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.clase-de-prueba{
+    background-color: rgb(125, 125, 125);
+    width: 600px;
+    height: 600px;
+    margin: 300px;  /* Es el espacio externo alrededor del elemento */
+    padding: 100px; /* Es el espacio interno, dentro del borde del elemento */
+    border: 10px solid black;
+    /* border-width: 15px; */
+    border-radius: 70px;
+}
+
+#footer-style{
+    font-size: x-large;
+    color: chocolate;
+}
+
+.container{
+    background-color: rgb(226, 223, 150);
+}
+
+.ultimo-parrafo{
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+body{
+    background-image: url(https://img.freepik.com/free-photo/sand-surface-texture-beige-background-zen-peace-concept_53876-126523.jpg?w=1800&t=st=1728481094~exp=1728481694~hmac=1c8880313f2ab1705dea2ab0412d36e22eef048f208462ac5a26edf4a0e51f59);
+}
+
+.nav{
+    text-align: center;
+}
