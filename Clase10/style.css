@@ -1,0 +1,16 @@
+#logo{
+    width: 50px;
+}
+
+p{
+    width: 100px;
+    background-color: burlywood;
+    border: 3px solid;
+    border-color: grey;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+nav{
+    background-color: lightgray;
+}
