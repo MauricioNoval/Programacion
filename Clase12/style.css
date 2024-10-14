@@ -1,0 +1,51 @@
+*{
+    margin: 20px;
+
+}
+
+.calculadora{
+    display: flex;
+    padding:10px;
+    background-color: salmon;
+    align-items: center;
+
+}
+
+#num1{
+    /* border: 5px solid black; */
+    border-radius: 5px;
+    height: 50px;
+    width: 300px;
+    font-size: medium;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+
+}
+
+#num2{
+    border-radius: 5px;
+    height: 50px;
+    width: 300px;
+    font-size: medium;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+
+}
+
+.simbolo{
+    font-size: 50px;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sumar{
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    font-size: larger;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#resultado{
+    font-size: 30px;
+}
