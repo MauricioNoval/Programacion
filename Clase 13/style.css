@@ -1,0 +1,74 @@
+#num1{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#num2{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.inputs{
+    padding: 10px;
+    border: solid black;
+    width:300px;
+    background-color:lightblue;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.operaciones{
+    padding:10px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgrey;
+    border: solid black;
+}
+
+.sumar{
+    width: 50px;
+    height: 100px;
+    font-size: 20px;
+}
+
+.restar{
+    width: 50px;
+    height: 100px;
+    font-size: 20px;
+}
+
+.multiplicar{
+    width: 50px;
+    height: 100px;
+    font-size: 20px;
+}
+
+.dividir{
+    width: 50px;
+    height: 100px;
+    font-size: 20px;
+}
+
+.resultado{
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: large;
+    border: solid black;
+}
+
+.boton{
+    width: 300px;
+    height: 100px;
+    
+}
