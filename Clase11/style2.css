@@ -1,0 +1,172 @@
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer, main, section {
+    padding: 10px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.navbar li {
+    margin: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Main Content (Mobile-first) */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-section {
+    margin-bottom: 20px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Video Section */
+.video-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.video-container {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-text {
+    padding-left: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Media Queries for Tablets (768px and up) */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .main-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .text-section {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .image-section {
+        width: 50%;
+    }
+
+    .video-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .video-container {
+        width: 50%;
+    }
+
+    .video-text {
+        width: 50%;
+        padding-left: 20px;
+        text-align: left;
+    }
+}
+
+/* Media Queries for Desktops (1024px and up) */
+@media (min-width: 1024px) {
+    .header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .navbar ul {
+        margin-top: 0;
+    }
+
+    .navbar li {
+        margin: 0 15px;
+    }
+
+    .main-content {
+        padding: 40px;
+    }
+
+    .video-section {
+        padding: 40px;
+    }
+}
